@@ -110,6 +110,11 @@ def computation(args):
         for i, j in task_helper.items():
             sys.stdout.write(f"{index}. {i}\n")
             index += 1
+            
+    elif args[1] == "clear":
+        open("task.txt", "w").close()
+        open("completed.txt", "w").close()
+        sys.stdout.write(f"All Pending/Completed task(s) deleted.\n")
 
 if __name__ == "__main__":
     computation(sys.argv)
