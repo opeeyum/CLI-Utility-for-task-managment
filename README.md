@@ -145,4 +145,12 @@ Completed : 3
 1. completed task
 2. another completed task
 3. yet another completed task
+``` 
+### 7. Delete all the tasks
+
+Delete all the pending and completed task(s).
+
+```
+$ ./task clear
+All Pending/Completed task(s) deleted.
 ```
