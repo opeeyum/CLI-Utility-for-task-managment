@@ -60,14 +60,14 @@ The app reads from and write to a task.txt text file. Each task occupies a singl
 Executing the command without any arguments, or with a single argument help prints the CLI usage.
 
 ```
-$ ./task help
+$ python3 task.py help
 Usage :-
-$ ./task add 2 hello world    # Add a new item with priority 2 and text "hello world" to the list
-$ ./task ls                   # Show incomplete priority list items sorted by priority in ascending order
-$ ./task del INDEX            # Delete the incomplete item with the given index
-$ ./task done INDEX           # Mark the incomplete item with the given index as complete
-$ ./task help                 # Show usage
-$ ./task report               # Statistics
+$ python3 task.py add 2 hello world    # Add a new item with priority 2 and text "hello world" to the list
+$ python3 task.py ls                   # Show incomplete priority list items sorted by priority in ascending order
+$ python3 task.py del INDEX            # Delete the incomplete item with the given index
+$ python3 task.py done INDEX           # Mark the incomplete item with the given index as complete
+$ python3 task.py help                 # Show usage
+$ python3 task.py report               # Statistics
 ```
 
 ### 2. List all pending items
@@ -83,7 +83,7 @@ Every item should be printed on a new line. with the following format
 Example:
 
 ```
-$ ./task ls
+$ python3 task.py ls
 1. change light bulb [2]
 2. water the plants [5]
 ```
@@ -95,7 +95,7 @@ index starts from 1, this is used to identify a particular task to complete or d
 Use the add command. The text of the task should be enclosed within double quotes (otherwise only the first word is considered as the item text, and the remaining words are treated as different arguments).
 
 ```
-$ ./task add 5 "the thing i need to do"
+$ python3 task.py add 5 "the thing i need to do"
 Added task: "the thing i need to do" with priority 5
 ```
 
@@ -104,14 +104,14 @@ Added task: "the thing i need to do" with priority 5
 Use the del command to remove an item by its index.
 
 ```
-$ ./task del 3
+$ python3 task.py del 3
 Deleted item with index 3
 ```
 
 Attempting to delete a non-existent item should display an error message.
 
 ```
-$ ./task del 5
+$ python3 task.py del 5
 Error: item with index 5 does not exist. Nothing deleted.
 ```
 
@@ -120,14 +120,14 @@ Error: item with index 5 does not exist. Nothing deleted.
 Use the done command to mark an item as completed by its index.
 
 ```
-$ ./task done 1
+$ python3 task.py done 1
 Marked item as done.
 ```
 
 Attempting to mark a non-existed item as completed will display an error message.
 
 ```
-$ ./task done 5
+$ python3 task.py done 5
 Error: no incomplete item with index 5 exists.
 ```
 
@@ -136,7 +136,7 @@ Error: no incomplete item with index 5 exists.
 Show the number of complete and incomplete items in the list. and the complete and incomplete items grouped together.
 
 ```
-$ ./task report
+$ python3 task.py report
 Pending : 2
 1. this is a pending task [1]
 2. this is a pending task with priority [4]
@@ -151,6 +151,6 @@ Completed : 3
 Delete all the pending and completed task(s).
 
 ```
-$ ./task clear
+$ python3 task.py clear
 All Pending/Completed task(s) deleted.
 ```
