@@ -2,12 +2,13 @@ from os import read
 import sys
 
 help_desc = """Usage :-
-$ ./task add 2 hello world    # Add a new item with priority 2 and text "hello world" to the list
-$ ./task ls                   # Show incomplete priority list items sorted by priority in ascending order
-$ ./task del INDEX            # Delete the incomplete item with the given index
-$ ./task done INDEX           # Mark the incomplete item with the given index as complete
-$ ./task help                 # Show usage
-$ ./task report               # Statistics
+$ python3 task.py add 2 hello world    # Add a new item with priority 2 and text "hello world" to the list
+$ python3 task.py ls                   # Show incomplete priority list items sorted by priority in ascending order
+$ python3 task.py del INDEX            # Delete the incomplete item with the given index
+$ python3 task.py done INDEX           # Mark the incomplete item with the given index as complete
+$ python3 task.py help                 # Show usage
+$ python3 task.py report               # Statistics
+$ python3 task.py clear                # Clear all the pending and completed tasks
 """
 
 task_helper = {}
