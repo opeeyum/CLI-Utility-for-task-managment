@@ -1,8 +1,8 @@
 #A command-line (CLI) program that lets us manage our tasks.
 
-The specification for this problem is written down as tests. 
+The specification for this program is written down as below. 
 
-Here's how it should work:
+Here's how it will work:
 
 ## Specification
 
