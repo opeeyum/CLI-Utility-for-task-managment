@@ -6,7 +6,7 @@ Here's how it will work:
 
 ## Specification
 
-The app reads from and write to a task.txt text file. Each task occupies a single line in this file. Each line in the file will foolow this format :
+The app reads from and write to a task.txt text file. Each task occupies a single line in this file. Each line in the file will folow this format :
 
    ```
    p task
