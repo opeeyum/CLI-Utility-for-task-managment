@@ -1,4 +1,4 @@
-#A command-line (CLI) program that lets us manage our tasks.
+# A command-line (CLI) program that lets us manage our tasks.
 
 The specification for this program is written down as below. 
 
